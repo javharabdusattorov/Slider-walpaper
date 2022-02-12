@@ -35,11 +35,11 @@ header .slider img.active_img {
 
 
 .btn {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     padding: 11px 10px;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: rgba(245, 245, 245, 0.808);
     margin: 0 15px;
 }
@@ -54,4 +54,42 @@ header .slider img.active_img {
     position: absolute;
     right: 0;
     top: 43%;
+}
+
+@media (max-width:991px) {
+    .btn-prev {
+        position: absolute;
+        left: 0;
+        top: 25%;
+    }
+    
+    .btn-next {
+        position: absolute;
+        right: 0;
+        top: 25%;
+    }
+}
+
+@media (max-width:400px) {
+    .btn {
+        width: 30px;
+        height: 30px;
+        padding: 6.5px 6px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(245, 245, 245, 0.808);
+        margin: 0 8px;
+    }
+    
+    .btn-prev {
+        position: absolute;
+        left: 0;
+        top: 15%;
+    }
+    
+    .btn-next {
+        position: absolute;
+        right: 0;
+        top: 15%;
+    } 
 }
